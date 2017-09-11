@@ -56,7 +56,7 @@ agi.verbose("=========================")
 agi.verbose("")
 
 while True:
-  agi.exec_command('Read','digit','custom/regreso-ims','1','','1','3')
+  agi.exec_command('Read','digit','custom/regreso-ivr','1','','1','3')
   result = agi.get_variable('digit')
   if result.isdigit():
     agi.verbose("Digito: %s" % result)
